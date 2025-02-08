@@ -1,0 +1,73 @@
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo a {
+    text-decoration: none;
+    color: rgb(255, 48, 91);
+    font-size: 24px;
+    font-weight: 800;
+}
+.links {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: rgb(24, 23, 23);
+    max-height: 0;
+    transition: max-height 1s;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px;
+}
+.links ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.5s;
+}
+.links ul a:hover {
+    color: rgb(255, 48, 91);
+}
+body:has(#home:target) .links a[href="#home"],
+body:has(#about:target) .links a[href="#about"],
+body:has(#services:target) .links a[href="#services"],
+body:has(#portfolio:target) .links a[href="#portfolio"], 
+body:has(#testimonial:target) .links a[href="#testimonial"], 
+body:has(#blog:target) .links a[href="#blog"], 
+body:has(#contact:target) .links a[href="#contact"],
+body:not(:has(:target)) .links a[href="#home"] {
+    color: rgb(255, 48, 91);
+}
+.menu {
+    color: white;
+    font-size: 20px;
+}
+.menu:hover {
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+body:has(#check:checked) nav {
+    overflow: visible;
+}
+body:has(#check:checked) .links {
+    max-height: 500px;
+}
+/*about section*/

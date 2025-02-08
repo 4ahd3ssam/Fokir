@@ -1,0 +1,28 @@
+@media screen and (min-width: 900px) {
+    .menu {
+        display: none;
+    }
+    nav .links {
+        position: static;
+        width: auto;
+        max-height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+    }
+    nav .links ul {
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .about-section {
+        column-gap: 100px;
+        align-items: center;
+    }
+    .about-section .cv-image {
+        width: 30%;
+    }
+    .about-section .cv-content {
+        width: 40%;
+    }
+}

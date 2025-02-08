@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+body {
+    padding-top: 50px;
+}
+/*home section*/
+.home-section {
+    background-image: url('../images/slider-02.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+.home-layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.794);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-info {
+    text-align: center;
+}
+.home-info p {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.home-info h1 {
+    color: rgb(255, 48, 91);
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 700;
+}
+.animated-p {
+    position: relative;
+    width: 100%;
+}
+.animated-p::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animated-word 5s infinite;
+    width: 100%;
+    font-weight: 300;
+}
+.about-section {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+}
+.cv-image, .cv-content {
+    width: 100%;
+}
+.cv-image {
+    border: 10px solid rgb(51, 51, 51);
+    border-radius: 5px;
+}
+.image {
+    position: relative;
+    overflow: hidden;
+}
+.image img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+.image .layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.666);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.image .layer i {
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.image .layer i:hover {
+    color: rgb(255, 48, 91);
+}
+.image:hover .layer {
+    transform: translateY(0);
+    opacity: 1;
+}
+.cv-content {
+    font-size: 16px;
+    line-heigHt: 28px;
+    color:rgb(85, 85, 85);
+}
+.cv-content h2 {
+    font-size: 32px;
+    line-height: 70px;
+    color: rgb(51, 51, 51);
+    position: relative;
+    padding-left: 10px;
+}
+.cv-content h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 25px;
+    background-color: rgb(255, 48, 91);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cv-content .description {
+    position: relative;
+    padding-bottom: 10px;
+}
+.cv-content .description::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    display: block;
+    border-bottom: dashed 1px gray;
+    width: 100%;
+}
+.cv-content .personal-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.personal-info div {
+    width: 100%;
+}
+.personal-info a {
+    text-decoration: none;
+    color:rgb(85, 85, 85);
+}
+.personal-info span {
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    line-height: 40px;
+}
+.cv-content .buttons-section {
+    margin-top: 15px;
+    display: flex;
+    column-gap: 10px;
+}
+.cv-content .buttons-section button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+.cv-content .buttons-section button a {
+    padding: 8px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: rgb(255, 48, 91);
+    border-radius: 3px;
+}
+.cv-button .fa-download, .fa-telegram {
+    color: white;
+    margin-left: 10px;
+} 
+.cv-content .buttons-section button a:hover {
+    background-color: rgb(255, 0, 0);
+}

@@ -1,0 +1,62 @@
+@keyframes animated-word {
+    0% {
+        content: "Professional Web |";
+    }
+    5% {
+        content: "Professional Web D|";
+    }    
+    10% {
+        content: "Professional Web De|";
+    }    
+    15% {
+        content: "Professional Web Des|";
+    }    
+    20% {
+        content: "Professional Web Desi|";
+    }    
+    25% {
+        content: "Professional Web Desig|";
+    }   
+    30% {
+        content: "Professional Web Design|";
+    }    
+    35% {
+        content: "Professional Web Designe|";
+    }
+    40% {
+        content: "Professional Web Designer|";
+    }
+    45% {
+        content: "Professional Web |";
+    }
+    50% {
+        content: "Professional Web D|";
+    }
+    55% {
+        content: "Professional Web De|";
+    }
+    60% {
+        content: "Professional Web Dev|";
+    }    
+    65% {
+        content: "Professional Web Deve|";
+    }    
+    70% {
+        content: "Professional Web Devel|";
+    }    
+    75% {
+        content: "Professional Web Develo|";
+    }    
+    80% {
+        content: "Professional Web Develop|";
+    }   
+    85% {
+        content: "Professional Web Develope|";
+    }    
+    90% {
+        content: "Professional Web Developer|";
+    }
+    100% {
+        content: "Professional Web |";
+    }
+}
